@@ -13,3 +13,32 @@ p {
     text-align: center;
     color: grey;
 }
+
+.form-group {
+    border-style: dashed;
+    width: 800px;
+    display: inline-block;
+
+}
+
+body {
+    text-align: center;
+}
+
+#button1 {
+    border-radius: 20px;
+    float: left;
+}
+
+#button2 {
+    float: right;
+    color: grey;
+}
+
+.buttonpair {
+    display: inline;
+}
+
+hr {
+    width: 800px;
+}
