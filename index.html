@@ -1,56 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="header">
-        <h1>Password Generator</h1>
-    </div>
-    <hr></hr>
-        <div>
-             <div class="form-group">
-                  <p>Your Secure Password</p>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
-                </div>
-                <hr></hr>
-              </form>
-            <div class="buttonpair"> 
-              <div id="button1">
-            <button type="button" class="btn btn-outline-primary btn-lg">Generate Password</button>
-              </div>
-              <div id="button2">
-            <button type="button" class="btn btn-outline-secondary btn-lg">Copy to Clipboard</button>
-              </div>
-            </div>
-    <!-- <div class="header">
-        <h1>Password Generator</h1>
-    </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-01">
-                    <p>Your Secure Password</p>
-                </div>
-            </div> -->
-                <script>
 
-                        var character = "abcdefghijklmnopqrstuvwyz0123456789"
-                        var key = ''
-                
-                        function generatePassword(passcode) {
-                            var key = ''
-                            for (i = 0, i < passcode, i++)
-                            key+=character.charAt(Math.floor(Math.random()*character.length))
-                            return key
-                        }
-                
-                    </script> 
-              </div>   
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="header">
+    <h1>Password Generator</h1>
+    <div class="container">
+      <h2>Generate a Password</h2>
+      <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+      <br></br>
+      <button id="generate">Generate Password</button>
+      <button id="copy">
+        Copy to Clipboard
+      </button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
 </body>
+
 </html>

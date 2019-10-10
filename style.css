@@ -1,44 +1,17 @@
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#header {
+    width: 80%;
+    margin: auto;
+    background: lightgrey;
+    text-align: center;
+}
+
 .container {
-    border-style: dashed;
-    height: 50px;
-}
-
-.header {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-p {
-    text-align: center;
-    color: grey;
-}
-
-.form-group {
-    border-style: dashed;
-    width: 800px;
+    margin: auto;
     display: inline-block;
-
-}
-
-body {
-    text-align: center;
-}
-
-#button1 {
-    border-radius: 20px;
-    float: left;
-}
-
-#button2 {
-    float: right;
-    color: grey;
-}
-
-.buttonpair {
-    display: inline;
-}
-
-hr {
-    width: 800px;
+    
 }
