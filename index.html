@@ -7,20 +7,38 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Password Generator</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
   <div id="header">
     <h1>Password Generator</h1>
     <div class="container">
-      <h2>Generate a Password</h2>
-      <hr></hr>
-      <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
-      <br></br>
-      <button id="generate">Generate Password</button>
-      <button id="copy">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-01">
+            <h2 class="display-4">Generate a Password</h2>
+          </div>
+            <div class="row">
+              <div class="col-md-02">
+            <hr class="my-4">
+          </div>
+          </div>
+        </div>
+        <div class="row">
+        <div class="col-md-03">
+            <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-04">
+              <button id="generate">Generate Password</button>
+              <button id="copy">
         Copy to Clipboard
       </button>
+          </div>
+        </div>
+      </div> 
     </div>
   </div>
   <script src="./script.js"></script>
