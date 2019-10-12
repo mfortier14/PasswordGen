@@ -3,13 +3,6 @@ var character = "abcdefghijklmnopqrstuvwyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ@!
 document.getElementById("generate").addEventListener("click", generatePassword);
 document.getElementById("copy").addEventListener("click", copyPassword);
 
-var character = prompt("Would you like atleast one lower case letter?");
-var character = prompt("Would you like atleast one upper case letter?");
-var character = prompt("Would you like atleast one number?");
-var character = prompt("Would you like atleast one special character?");
-
-if 
-
 function generatePassword() {
     var passLength = prompt("Enter how long you'd like your password to be");
     var key = "";
