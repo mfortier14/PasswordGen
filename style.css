@@ -8,10 +8,32 @@ h1 {
     margin: auto;
     background: lightgrey;
     text-align: center;
+    padding-bottom: 600px;
 }
 
 .container {
     margin: auto;
     display: inline-block;
+    background: white;
+    padding: 0 100px 200px 100px;
+    width: 300px;
     
+}
+
+#generate {
+    padding: 0 10px 0 10px;
+    background: red;
+    color: white;
+    border-radius: 10px;
+}
+
+#copy {
+    padding: 0 10px 0 10px;
+    background: grey;
+    color: white;
+    border-radius: 10px;
+}
+
+#password {
+    border-style: dashed;
 }
