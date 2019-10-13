@@ -8,7 +8,7 @@ h1 {
 #header {
     width: 80%;
     margin: auto;
-    background-image: url("https://images.pexels.com/photos/289649/pexels-photo-289649.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background: #006ba6;
     text-align: center;
     padding-bottom: 200px;
     font-size: 20px;
@@ -17,7 +17,7 @@ h1 {
 .container {
     margin: auto;
     display: inline-block;
-    padding: 0 100px 200px 100px;
+    padding: 0 400px 500px 400px;
     width: 500px;
     
 }
@@ -47,22 +47,38 @@ textarea {
 }
 
 .display-4 {
-    float: left;
-}
-
-h2 {
-    font-size: 10px;
+    font-size: 20px;
+    line-height: 0;
 }
 
 .col-md-03 {
     display: inline-block;
 }
 
-.col-md-04 {
-    float: right;
+@media screen and (max-width: 98px) {
+    .jumbotron {
+        background: white;
+        margin-top: 10px;
+        text-align: center;
+    }
+    }
+
+    @media screen and (max-width: 768px) {
+        .jumbotron {
+            background: white;
+            margin-top: 10px;
+            text-align: center;
+        }
+        }
+
+    @media screen and (max-width: 600px) {
+    .jumbotron {
+    background: white;
+    margin-top: 10px;
+    text-align: center;
+}
 }
 
-.jumbotron {
-    background: white;
-    margin-top: 20px;
+.main-section {
+    display: inline-block;
 }
