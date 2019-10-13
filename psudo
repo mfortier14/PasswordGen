@@ -6,3 +6,6 @@ each prompt needs to be a separate variable
 
 create an object named options with 
 
+if (lowerCase === true) {
+    
+}
