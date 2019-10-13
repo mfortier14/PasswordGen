@@ -10,6 +10,7 @@ var Lowercase;
 var upperCase;
 var number;
 var specialChar;
+// created variables for the different character options 
 
 function chooseCharacter() {
     var lowerCase = confirm("Would you like atleast one lower case letter?");
@@ -22,13 +23,8 @@ function chooseCharacter() {
     console.log(upperCase);
     console.log(number);
     console.log(specialChar);
-// var options, {
-//     specialcharacters: specialChar,
-//     uppercasecharacters: upperCase,
-//     lowercasecharacters: lowerCase,
-//     numbercharacters: number
-// }
 
+// must choose atleast one of the character options or they will be asked again before generating a password 
     if (lowerCase === false && upperCase === false && number === false && specialChar === false) {
         alert ("You must choose alteast one specification");
         chooseCharacter();
@@ -36,6 +32,7 @@ function chooseCharacter() {
 
 }
 
+// asking how long the password will be in length between 8 and 128 characters 
 function generatePassword() {
     var passLength = prompt("Enter how long you'd like your password to be");
     var key = "";
@@ -53,3 +50,4 @@ function copyPassword() {
    document.getElementById("password").textContent = "";
    alert("Copied password to clipboard");
 };
+// when the copy to clipboard button is clicked, the textarea will go back to its default/ blank 
